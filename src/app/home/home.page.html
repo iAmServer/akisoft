@@ -1,8 +1,47 @@
 <ion-content [fullscreen]="true">
-  <ion-content>
-    <ion-label>
-      <h1>Hello there.</h1>
-      <h3>How would you like to log in?</h3>
-    </ion-label>
-  </ion-content>
+      <div class="login-header">
+        <ion-label>
+          <h1>Hello there.</h1>
+          <h3>How would you like to log in?</h3>
+        </ion-label>
+      </div>
+      <div class="login-box">
+        <form>
+          <ion-list lines="none">
+            <ion-item>
+              <ion-input type="text" placeholder="Email" name="email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input type="password" autocapitalize="off" name="password" placeholder="Password"></ion-input>
+              <ion-icon name="eye-outline" size="small" slot="end"></ion-icon>
+            </ion-item>
+            <ion-label>
+              <p class="ion-float-right password">Forget Password?</p>
+            </ion-label>
+          </ion-list>
+  
+          <ion-grid fixed class="ion-margin-vertical">
+            <ion-row>
+              <ion-col size="4" class="ion-text-center">
+                <ion-button shape="round" fill="clear">
+                  <ion-icon slot="icon-only" name="finger-print-outline"></ion-icon>
+                </ion-button>
+              </ion-col>
+              <ion-col size="8">
+                <ion-button shape="round" expand="block" type="submit">
+                  <ion-icon slot="end" size="small" name="chevron-forward" class="ion-float-right"></ion-icon>
+                  Login
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+  
+          <div class="login-bottom">
+            <ion-label class="ion-margin-top">
+              <p class="ion-text-center">New User? <span color="primary">Create Account</span></p>
+              <p class="version ion-text-center">version 1.7.3</p>
+            </ion-label>
+          </div>
+        </form>
+      </div>
 </ion-content>
